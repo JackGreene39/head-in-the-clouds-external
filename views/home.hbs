@@ -3,6 +3,11 @@
     <li>
         <h2>{{ title }}</h2>
         <p>{{ description }}</p>
+        <form action="/delevent" method="post">
+            <input name="title" value="{{ title }}"/> 
+            <input name="description" value="{{ description }}" /> 
+            <input type="submit" name="delete" value="delete" class="btn btn-primary" />
+        </form>   
     </li>
   {{/events}}
 </ul>
