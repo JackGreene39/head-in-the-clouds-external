@@ -1,9 +1,12 @@
-<div class="container-flex" style= "text-align:center">
+<div class="d-flex justify-content-center" style= "text-align:center">
     <ul style="list-style-type:none;">
     {{#events}}
-    <li>
-        <h2>{{ title }}</h2>
-        <p>{{ description }}</p>
+    <li class="card bg-secondary m-3" style="width: 26rem;">
+    <div class="card-body">
+        <h2 class="card-text">{{ title }}</h2>
+        <p class="card-text">{{ description }}</p>
+    </div>
+        
     </li>
     {{/events}}
     </ul>
